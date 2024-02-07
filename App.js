@@ -25,11 +25,43 @@ const estilos = StyleSheet.create({
   conteudo: {
     backgroundColor: "#5b90e3",
     flex: 4,
+    width: "90%",
+    marginTop: 10,
+    marginBottom: 10,
+    marginLeft: "auto",
+    marginRight: "auto",
+    borderRadius: 8,
   },
 
   rodape: {
-    backgroundColor: "#213475",
+    backgroundColor: "#213452",
     flex: 0.7,
+  },
+
+  // Formatação do texto
+  textoCabecalho: {
+    color: "#fff",
+    textAlign: "center",
+    marginTop: 40,
+    fontSize: 22,
+    fontWeight: "bold",
+  },
+
+  textoConteudo: {
+    fontSize: 18,
+    textAlign: "center",
+    marginHorizontal: 90,
+    marginTop: 20,
+    marginBottom: 20,
+    fontWeight: "400",
+    color: "#000",
+  },
+
+  textoRodape: {
+    textAlign: "center",
+    fontSize: 20,
+    marginTop: 10,
+    color: "#fff",
   },
 });
 
@@ -43,20 +75,26 @@ export default function App() {
   return (
     <>
       {/* Barra de Status do Celular */}
-      <StatusBar barStyle="default" />
+      <StatusBar barStyle="light-content" />
 
       {/* Passando a propriedade que criamos com o objeto onde fizemos a estilização */}
       <SafeAreaView style={estilos.container}>
         <View style={estilos.cabecalho}>
-          <Text>@_Tanaka11_</Text>
+          <Text style={estilos.textoCabecalho}>@_Tanaka11_</Text>
         </View>
 
         <View style={estilos.conteudo}>
-          <Text>Lorem Ipsum</Text>
+          <Text style={estilos.textoConteudo}>
+            Lorem ipsum sociosqu dictum ut semper nostra tincidunt feugiat
+            suspendisse, duis pharetra etiam quam porta consequat potenti.
+            lobortis vestibulum justo turpis cras aliquet molestie aptent
+            scelerisque, congue faucibus nunc ultrices suspendisse mollis dolor
+            ipsum lorem, ipsum sodales blandit id primis gravida laoreet.
+          </Text>
         </View>
 
         <View style={estilos.rodape}>
-          <Text>Rodapé</Text>
+          <Text style={estilos.textoRodape}>Rodapé</Text>
           <Button title="Clique Aqui! 🎭" onPress={click} />
         </View>
       </SafeAreaView>
