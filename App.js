@@ -20,6 +20,7 @@ const estilos = StyleSheet.create({
   cabecalho: {
     backgroundColor: "#213452",
     flex: 1,
+    justifyContent: "center",
   },
 
   conteudo: {
@@ -42,19 +43,22 @@ const estilos = StyleSheet.create({
   textoCabecalho: {
     color: "#fff",
     textAlign: "center",
-    marginTop: 40,
     fontSize: 22,
     fontWeight: "bold",
   },
 
-  textoConteudo: {
-    fontSize: 18,
+  subtitulo: {
+    fontSize: 20,
     textAlign: "center",
-    marginHorizontal: 90,
     marginTop: 20,
-    marginBottom: 20,
     fontWeight: "400",
     color: "#000",
+  },
+
+  textoConteudo: {
+    marginTop: 20,
+    fontSize: 16,
+    marginHorizontal: 6,
   },
 
   textoRodape: {
@@ -84,6 +88,16 @@ export default function App() {
         </View>
 
         <View style={estilos.conteudo}>
+          <Text style={estilos.subtitulo}>Conteudo</Text>
+
+          <Text style={estilos.textoConteudo}>
+            Lorem ipsum sociosqu dictum ut semper nostra tincidunt feugiat
+            suspendisse, duis pharetra etiam quam porta consequat potenti.
+            lobortis vestibulum justo turpis cras aliquet molestie aptent
+            scelerisque, congue faucibus nunc ultrices suspendisse mollis dolor
+            ipsum lorem, ipsum sodales blandit id primis gravida laoreet.
+          </Text>
+
           <Text style={estilos.textoConteudo}>
             Lorem ipsum sociosqu dictum ut semper nostra tincidunt feugiat
             suspendisse, duis pharetra etiam quam porta consequat potenti.
