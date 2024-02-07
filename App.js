@@ -14,18 +14,22 @@ const estilos = StyleSheet.create({
   container: {
     backgroundColor: "#466aa6",
     flex: 1,
+    justifyContent: "space-between",
   },
 
   cabecalho: {
     backgroundColor: "#213452",
+    flex: 1,
   },
 
   conteudo: {
     backgroundColor: "#5b90e3",
+    flex: 4,
   },
 
   rodape: {
-    backgroundColor: "#213452",
+    backgroundColor: "#213475",
+    flex: 0.7,
   },
 });
 
