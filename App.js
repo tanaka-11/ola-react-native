@@ -21,7 +21,7 @@ const estilos = StyleSheet.create({
   },
 
   conteudo: {
-    backgroundColor: "lightblue",
+    backgroundColor: "#5b90e3",
   },
 
   rodape: {
