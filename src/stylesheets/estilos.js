@@ -1,9 +1,12 @@
 import { StyleSheet } from "react-native";
 
+// Exemplo de variavel de estilo
+let corFundo = "#466aa6";
+
 const estilos = StyleSheet.create({
   // Propriedade retornando um objeto com a estilização via js.
   container: {
-    backgroundColor: "#466aa6",
+    backgroundColor: corFundo, // Passando o exemplo da variavel de estilo
     flex: 1,
     justifyContent: "space-between",
   },
